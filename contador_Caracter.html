@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>String</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <style>
+            
+            body {
+                background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 22px;
+            }
+
+            form {
+                text-align: center;
+            }
+
+            .caixa {
+                height: 20px;
+                width: 220px;
+            }
+
+            .botao {
+                height: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <script language="javascript">
+            function contador() {
+                var palavra = document.getElementById("txtpalavra").value; 
+                var quantidade = palavra.length;
+
+                if(quantidade <= 5) {
+                    window.alert("A quantidade de caracteres deve ser maior que cinco!");
+                    document.getElementById("txtpalavra").value = "";
+                    document.getElementById("txtpalavra").focus();
+                }
+                else {
+                    document.getElementById("txtqtd").value = quantidade;
+                }
+            }
+
+            function foco() {
+            document.getElementById("txtpalavra").focus();
+            }
+        </script>
+        <form>
+            <H1 class="centro">Contador de caracteres</H1>
+            <H2 class="centro">Digite algo</H2></br>
+            <input type="text" class="caixa" id="txtpalavra"/></br></br>
+            <input type="button" class="botao" value="Contar" onClick="contador()"/>&nbsp;&nbsp;
+            <input type="reset" class="botao" value="Limpar" onClick="foco()"/></br></br>
+            <input type="text" class="caixa" id="txtqtd"/>
+        </form>
+    </body>
+</html>

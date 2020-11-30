@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -19,11 +19,7 @@
                 <li><a href="#parte5" id="pt5">Sustentabilidade</a></li>
                 <li><a href="#parte6" id="pt6">Localização</a></li>
                 <li><a href="#parte7" id="pt7">Suporte</a></li>
-                <li><a href="" id="pt8" >Login</a>
-                    <ul>
-                        <li><a href="">Registrar</a></li>
-                    </ul>
-                </li>
+                <li><a href="login.html" id="pt8">Login</a></li>
                 <li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li>
             </ul>
         </header>
@@ -82,7 +78,7 @@
                     <img src="serv-1.png" alt="">
                 </div>
                 <div class="serv1">
-                    <h2>Desenvolvimento de sistemas</h2>
+                    <h2>DESENVOLVIMENTO DE SISTEMAS</h2>
                 </div>
             </div>
             <div class="box">
@@ -90,7 +86,7 @@
                     <img src="serv-2.png" alt="">
                 </div>
                 <div class="serv2">
-                    <h2>Design</h2>
+                    <h2>DESIGN</h2>
                 </div>
             </div>
             <div class="box">
@@ -98,7 +94,30 @@
                     <img src="serv-3.png" alt="">
                 </div>
                 <div class="serv3">
-                    <h2>Análise de sistemas</h2>
+                    <h2>ANÁLISE DE SISTEMAS</h2>
+                </div>
+            </div>
+        </section>
+        <!--Produtos-->
+        <section class="sec_pro" id="parte8">
+            <div>  
+                <div class="c">
+                    <h3>Sistema C#</h3>
+                    <p>- aaa</p>
+                    <img src="c.png" style="width: 65%; height: 58vh">
+                </div>
+                <br><br><hr><br>
+                <h3>Design</h3>
+                <p>- aaa</p>
+                <div class="c2">
+                    <img src="ep2.png" style="width: 35%; height: 50vh; margin: -5% 12%;">
+                    <img src="cracha_palace.png" style="width: 44%; height: 54vh; margin-top: -2%;">
+                </div>
+                <br><br><hr><br>
+                <div class="c">
+                    <h3>Análise</h3>
+                    <p>- aaa</p>
+                    <img class="c" src="analisesite.png" style="width: 45%; height: 58vh">
                 </div>
             </div>
         </section>
@@ -165,38 +184,50 @@
         </section>
         <!--Contato-->
         <section class="sec_cont" id="parte7">
-            <main>
                 <h3 class="faq">FAQ</h3>
-                <p href="#" onMouseOver="Mostra('resp1')" onMouseOut="Esconde('resp1')" class="perg">- Quais são as formas de pagamentos?</p>
-                <article id="resp1" class="invisivel"> 
-                    <p class="perg">Nós aceitamos vários tipos de pagamentos. Cartões de credito ou débito, depósito bancário.</p>
-                </article>
+                    <div class="accordion">
+                        <div class="contentBx">
+                            <div class="label">- Quais são as formas de pagamentos?</div>
+                            <div class="content">
+                                <p>Nós aceitamos vários tipos de pagamentos. Cartões de credito ou débito, depósito bancário.</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label">- Como posso acompanhar o serviço solicitado?</div>
+                            <div class="content">
+                                <p>Nossos clientes tem total acesso ao status do serviço. Seja por Whatsapp ou mesmo E-mail.</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label">- Quais são as formas de pagamentos?</div>
+                            <div class="content">
+                                <p>Nós aceitamos vários tipos de pagamentos. Cartões de credito ou débito, depósito bancário.</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label">- Como funciona a entrega do serviço?</div>
+                            <div class="content">
+                                <p>Nós enviamos tudo pelo E-mail pedido na hora do pagamento do cliente, deixando o acesso simples e prático para o cliente :D.</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label">- Quanto tempo demora para o serviço ser entregue?</div>
+                            <div class="content">
+                                <p>O cliente é constantemente atualizado sobre o status através das formas de contato informadas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </br>
-                <p href="#" onMouseOver="Mostra('resp2')" onMouseOut="Esconde('resp2')" class="perg">- Como posso acompanhar o serviço solicitado?</p>
-                <article id="resp2" class="invisivel"> 
-                    <p class="perg">Nossos clientes tem total acesso ao status do serviço. Seja por Whatsapp ou mesmo E-mail.</p>
-                </article>
-                </br><!--esse parágrafo é só para dar um espaço entre linhas, menor que o <br/>-->
-                <p href="#" onMouseOver="Mostra('resp3')" onMouseOut="Esconde('resp3')" class="perg">- Como funciona a entrega do serviço?</p>
-                <article id="resp3" class="invisivel"> 
-                    <p class="perg">Nós enviamos tudo pelo E-mail pedido na hora do pagamento do cliente, deixando o acesso simples e prático para o cliente :D.</p>
-                </article>
-                </br>
-                <p href="#" onMouseOver="Mostra('resp4')" onMouseOut="Esconde('resp4')" class="perg">- Quanto tempo demora para o serviço ser entregue?</p>
-                <article id="resp4" class="invisivel"> 
-                    <p class="perg">O cliente é constantemente atualizado sobre o status através das formas de contato informadas.</p>
-                </article>
-                </br>
-            </main>
             <h3 class="faq">FALE CONOSCO</h3>
-            <form name="form" class="form_cont" onclick="Validação()">
+            <form method="post" action="php_cliente.php" name="form" class="form_cont" onclick="Validação()">
                 <div class="login-box">
                     <div class="text-box">
-                        <input type="text" placeholder="Nome*" name="nome">
-                        <input type="email" placeholder="E-mail*" name="email">
-                        <input type="text" placeholder="Telefone(opcional)">
-                        <input type="text" placeholder="Celular(opcional)">
-                        <input class="btn_enviar" type="button" value="Enviar" name="envia" onclick="Enviar()">
+                        <input type="text" placeholder="Nome*" maxlength="50" id="txtnome" name="nome">
+                        <input type="email" placeholder="E-mail*" maxlength="50" name="email">
+                        <input type="text" placeholder="Celular (opcional)" maxlength="11" name="celular">
+                        <textarea placeholder="Mensagem*" maxlength="200" name="msg"></textarea>
+                        <input class="btn_enviar" type="button" value="Enviar" name="envia">
+                        <input class="btn_limpar" type="reset" value="Limpar" onClick="limpar()">
                     </div>
                 </div>
             </form>    

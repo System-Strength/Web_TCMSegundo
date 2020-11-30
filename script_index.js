@@ -58,6 +58,9 @@ function abreMenu()
   document.getElementById("menu2").style.visibility = "visible";
   document.getElementById("close").style.visibility = "visible";
 }
+function limpar() {
+    document.getElementById("txtnome").focus();
+}
 var pt1 = window.document.getElementById('pt1')
 pt1.addEventListener('click', parte1)
 
@@ -120,34 +123,9 @@ function fechaMenu()
     document.getElementById("menu").style.height = "12%";
     document.getElementById("menu").style.visibility = "visible";
 }
-
-function Mostra(x) //FAQ
-{
-    var resposta = document.getElementById(x);
-    /* abaixo efetua-se a troca da classe "invisivel" pela "visivel"
-    do elemento com "id" trazido pela variável "x" */
-    resposta.className = resposta.className.replace("invisivel","visivel");
-}
-
-function Esconde(x)
-{
-    var resposta = document.getElementById(x);
-    /* abaixo efetua-se a troca da classe "visivel" pela "invisivel"
-    do elemento com "id" trazido pela variável "x" */
-    resposta.className = resposta.className.replace("visivel","invisivel");
-}
-
-function Enviar(){
-    if (document.form.nome.value == "" && document.form.email.value == ""){
-        alert("Preencha os campos obrigatórios!")
-    }
-    else if (document.form.nome.value == ""){
-        alert("O campo nome é obrigatório!")
-    }
-    else if (document.form.email.value == ""){
-        alert("O campo email é obrigatório!")
-    }
-    else{
-        alert("Seus dados foram enviados com sucesso!") 
-    }
+const accordion = document.getElementsByClassName('contentBx');
+for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+    })
 }

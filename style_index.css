@@ -96,18 +96,9 @@ html {
     position: relative;
     width: 100%;
     min-height: 100vh;
- 
     background-size: cover;
-    
     justify-content: center;
     align-items: center;
-}
-.banner h2 {
-    color: #fff;
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.5em;
 }
 .sliders img {
     opacity: 0;
@@ -303,6 +294,24 @@ p {
     justify-content: center;
     align-items: center;
 }
+.imgsis {
+    width: 65%; 
+    height: 58vh;
+}
+.imgdes {
+    width: 35%; 
+    height: 50vh; 
+    margin: -5% 12%;
+}
+.imgdes2 {
+    width: 48%; 
+    height: 54vh; 
+    margin-top: -2%;
+}
+.imgana {
+    width: 48%; 
+    height: 58vh;
+}
 .c2 {
     text-align: right;
     justify-content: center;
@@ -354,7 +363,7 @@ section .accordion {
     font: normal 16pt sans-serif;
     padding: 20px;
     text-align: center;
-    background: black;
+    background: #252525;
     color: #fff;
     cursor: pointer;
 }
@@ -380,7 +389,6 @@ section .accordion {
     height: 0;
     overflow: hidden;
     transition: 0.5s;
-    
 }
 .accordion .contentBx.active .content {
     height: 92px;
@@ -585,6 +593,67 @@ footer p:hover{
         width: 30vw;
         visibility: visible;
     }
+    .banner {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+    .texts {
+        text-align: center;
+        text-transform: uppercase;
+        width: 50vh;
+        height: 30vh;
+        margin-top: 20%;
+        margin-left: 16%;
+        position: absolute;
+        display: block;
+    }
+    .texts p {
+        z-index: 100;
+        opacity: 0;
+        position: absolute;
+        left: 35px;
+        display: flex;
+        font: bold 29pt Segoe UI;
+        color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #000;
+        text-transform: uppercase;
+        text-justify: distribute;
+        transition: ease-out 2s;
+    }
+    .imgsis {
+        width: 100%; 
+        height: 38vh;
+    }
+    .imgdes {
+        width: 80%; 
+        height: 50vh; 
+        margin: -5% 12%;
+    }
+    .imgdes2 {
+        width: 90%; 
+        height: 50vh; 
+        margin-top: -2%;
+    }
+    .imgana {
+        width: 100%; 
+        height: 40vh;
+    }
+    .c2 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+    }
+    .accordion .contentBx.active .content {
+        height: 200px;
+        padding: 15px;
+        background: orangered;
+    }
     .openmenu{
         visibility: visible;
         margin-left: 95px;
@@ -601,9 +670,6 @@ footer p:hover{
     #close:hover{
         color:cornflowerblue;
         transition: ease-in 0.3s;
-    }
-    .banner h2{
-        font-size: 25px;
     }
     .btn_face, .btn_insta, .btn_link{
         display: inline-block;

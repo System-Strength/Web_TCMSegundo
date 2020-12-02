@@ -13,9 +13,9 @@
             <a href="#parte1" id="pt1"><img src="logo2.png"alt=""></a>
             <!--<span class="openmenu" onClick="abreMenu()">&#9776;</span> <!--responsivo-->
             <ul>
-                <li><a>Serviços</a></li>
-                <li><a>Cadastro</a></li>
-                <li><a>Consulta</a></li>
+                <li><a href="#parte1" id="pt1">Serviços</a></li>
+                <li><a href="#parte2" id="pt2">Cadastro</a></li>
+                <li><a href="#parte3" id="pt3">Consulta</a></li>
                 <!--<li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li> <!--responsivo-->
                 <ul>
                     <li><a href="index1.html">Sair</a>
@@ -23,7 +23,7 @@
             </ul>
         </header>
         <!--Cadastramento-->
-        <section class="sec">
+        <section class="sec" id="parte1">
             <div class="conteudo">
                 <h3>Cadastramento de funcionários</h3>
                 <p>Por favor, forneça as seguintes informações.</p>
@@ -31,18 +31,18 @@
             <br>
             <div class="cadas">
                 <form class="text-box">
-                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="Nome" id="txtnome">
                     <input type="text" placeholder="Senha">
                     <input type="text" placeholder="RG">
                     <input type="text" placeholder="Endereço">
                     <input type="date">
-                    <input type="button" value="Cadastrar" class="btn_enviar">
-                    <input type="button" value="Limpar" class="btn_limpar">
+                    <input type="submit" value="Cadastrar" class="btn_enviar">
+                    <input type="reset" value="Limpar" class="btn_limpar" onClick="limpar()">
                 </form>
             </div>
         </section>
         <!--Consulta-->
-        <section class="sec2">
+        <section class="sec2" id="parte2">
             <div class="conteudo2">
                 <h3>Consulta</h3>
                 <p>Para funcionários e clientes.</p>
@@ -56,11 +56,77 @@
             </div>
         </section>
 
-        <section class="sec3">
-            <div class="conteudo3">
-                <h3>Serviços</h3>
-                <p>asdasd</p>
+        <section class="sec3" id="parte3">
+            <h3 class="alinha">SERVIÇOS</h3>
+            <div class="serv">
+                <div class="box">
+                    <div class="icon1">
+                        <img src="serv-1.png" alt="">
+                    </div>
+                    <div class="serv1">
+                        <h2>DESENVOLVIMENTO DE SISTEMAS</h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon1">
+                        <img src="serv-2.png" alt="">
+                    </div>
+                    <div class="serv1">
+                        <h2>DESIGN</h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon1">
+                        <img src="serv-3.png" alt="">
+                    </div>
+                    <div class="serv1">
+                        <h2>ANÁLISE DE SISTEMAS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="serv">
+                <div class="box">
+                    <div class="icon1">
+                        <img src="internet.png" alt="">
+                    </div>
+                    <div class="serv1">
+                        <h2>WEB</h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon1">
+                        <img src="android.png" alt="">
+                    </div>
+                    <div class="serv1">
+                        <h2>ANDROID</h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon1">
+                        <img src="base-de-dados.png" alt="">
+                    </div>
+                    <div class="serv1">
+                        <h2>BANCO DE DADOS</h2>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon1">
+                        <img src="redes.png" alt="">
+                    </div>
+                    <div class="serv1">
+                        <h2>REDES</h2>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <footer>
+            <hr>
+            <a href="https://www.facebook.com/System-Strength-109196077475056/?modal=suggested_action&notif_id=1593788120436376&notif_t=page_user_activity" target="_blank" rel="noopener noreferrer" class="btn_face"><i class="fa fa-facebook-square"></i></a>
+            <a href="http://www.instagram.com/systemstrength/?hl=pt-br" target="_blank" rel="noopener noreferrer" class="btn_insta"><i class="fa fa-instagram"></i></a>
+            <a href="http://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="btn_link"><i class="fa fa-linkedin-square"></i></a>
+            <p>&copy; SystemStrength</p>
+        </footer>
+        <script language="javascript" src="script_index2.js"></script>
     </body>
 </html>

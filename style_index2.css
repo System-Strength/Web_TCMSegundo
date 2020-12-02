@@ -1,3 +1,4 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +7,36 @@ body {
     min-height: 1000px;
     background-color: black;
     margin-bottom: 25px;
+}
+hr {
+    margin-top: 0%;
+    border-bottom: solid 6px cornflowerblue;
+}
+h3 {
+    font-weight: 200;
+    margin-bottom: 10px;
+    color:white;
+    font: normal 40pt Arial;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1 px;
+    -webkit-text-stroke-color: #000;
+}
+h3:hover {
+    transition: ease 0.8s;
+    color: orangered;
+}
+p {
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+.alinha {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 #menu {
     position: fixed;
@@ -46,6 +77,7 @@ body {
     position: relative;
     margin: 0 30px;
     color: #fff;
+    text-decoration: none;
     letter-spacing: 1px;
     font-weight: 300;
     font-size: 11pt;
@@ -68,27 +100,6 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-h3 {
-    font-weight: 200;
-    margin-bottom: 10px;
-    color:white;
-    font: normal 40pt Arial;
-    text-transform: uppercase;
-    -webkit-text-stroke-width: 1 px;
-    -webkit-text-stroke-color: #000;
-}
-h3:hover {
-    transition: ease 0.8s;
-    color: orangered;
-}
-p {
-    color: white;
-    position: relative;
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
 }
 .cadas {
     height: 500px;
@@ -186,12 +197,109 @@ input[type=email]::placeholder, input[type=text]::placeholder {
     margin-left: 27.5%;
 }
 .sec3 {
-    padding: 30px;
-    min-height: 45vh;
-    background: rgb(35,35,35);
+    background: rgb(35, 35, 35);
+    min-height: 90vh;
+    padding: 50px;
 }
-.conteudo3 {
-    text-align: center;
-    justify-content: center;
+.serv {
+    padding: 90px;
+    display: flex;
+}
+.icon1 img, .icon2 img, .icon3 img {
+    width: 45%;
+    height: 48%; 
+    margin-left: 28%;  
+}
+.serv1 h2, .serv2 h2, .serv3 h2 {
+    justify-items: center;
     align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.btn_face, .btn_insta, .btn_link{
+    display: inline-block;
+    width: 4vw;
+    height: 4vw;
+    background: #cececec5;
+    margin-top: 1vw;
+    margin-left: 21vw;
+    border-radius: 30%;
+    text-align: center;
+    color: #fefeff;
+}
+.btn_face:hover{
+    background: cornflowerblue;
+}
+.btn_insta:hover{
+    background: rgba(243, 70, 104, 0.795);
+}
+.btn_link:hover{
+    background: rgb(0, 77, 179);
+}
+.btn_face i, .btn_insta i, .btn_link i{
+    line-height: 4vw;
+    font-size: 1.8vw;
+    transition: 0.2s linear;
+}
+.btn_face:hover i, .btn_insta:hover i, .btn_link:hover i{
+    transform: scale(1.5);
+    color: #f1f1f1;
+}
+footer p{
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    font-style: italic;
+    font-size: 18px;
+}
+footer p:hover{
+    color: rgb(182, 182, 182);
+}
+@media only screen and (max-width: 1300px) {
+    #menu{
+        height: 20vw;
+    }
+    #menu ul{
+        background-color: black;
+        display: block;
+        text-align: center;
+        margin-left: 10%;
+        margin-top: -10%;
+        line-height: 40px;
+        height: 100vh;
+        padding: 150px;
+        z-index: 30;
+        right: 400px;
+        visibility: hidden;
+    }
+    #menu img{
+        height: 15vw;
+        width: 30vw;
+        visibility: visible;
+    }
+    .closebtn{
+        visibility:hidden;
+        font-size: 30px;
+    }
+    #close:hover{
+        color:cornflowerblue;
+        transition: ease-in 0.3s;
+    }
+    .btn_face, .btn_insta, .btn_link{
+        display: inline-block;
+        width: 10vw;
+        height: 10vw;
+        background: #cececec5;
+        margin-top: 1vw;
+        margin-left: 15vw;
+        border-radius: 30%;
+        text-align: center;
+        color: #fefeff;
+    }
+    .btn_face i, .btn_insta i, .btn_link i{
+        line-height: 4vw;
+        font-size: 5vw;
+        margin-top: 2.8vw;
+        transition: 0.2s linear;
+    }
 }

@@ -28,10 +28,12 @@ window.addEventListener("scroll", function() {
 function abreMenu() 
 {  
   document.getElementById("menu2").style.left = "-80%";
-  document.getElementById("menu2").style.height = "80%";
+  document.getElementById("menu2").style.height = "50%";
+  document.getElementById("sair").style.left = "265%";
+  document.getElementById("close").style.left = "276%";
   document.getElementById("menu").style.height = "100vh";
   document.getElementById("menu").style.backgroundColor = "black";
-  document.getElementById("menu2").style.display = "block";
+  document.getElementById("menu2").style.display = "inline-block";
   document.getElementById("menu2").style.visibility = "visible";
   document.getElementById("close").style.visibility = "visible";
 }

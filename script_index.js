@@ -97,10 +97,6 @@ function parte3(){
     fechaMenu()
     document.getElementById("parte3")
 }
-function parte4(){
-    fechaMenu()
-    document.getElementById("parte4")
-}
 function parte5(){
     fechaMenu()
     document.getElementById("parte5")

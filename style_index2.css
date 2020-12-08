@@ -8,10 +8,6 @@ body {
     background-color: black;
     margin-bottom: 25px;
 }
-hr {
-    margin-top: 0%;
-    border-bottom: solid 6px cornflowerblue;
-}
 h3 {
     font-weight: 200;
     margin-bottom: 10px;
@@ -32,6 +28,10 @@ p {
     font-weight: 300;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
+}
+hr {
+    margin-top: 0%;
+    border-bottom: solid 6px cornflowerblue;
 }
 .alinha {
     text-align: center;
@@ -70,7 +70,7 @@ p {
 #menu ul li {
     position: relative;
     list-style: none;
-    left: -57%;
+    left: -35%;
 }
 #menu ul li a {
     padding: 21px;
@@ -86,10 +86,14 @@ p {
 #menu ul li a:hover {
     color: orangered;
 }
-#menu ul li:hover > ul {
-    margin-top: 2.3%;
-    position: fixed;
-    display: block;
+#close {
+	visibility: hidden;
+}
+.openmenu {
+    font-size: 3vw;
+    cursor: pointer;
+    color: rgb(255,255,255);
+    visibility: hidden;
 }
 .sec {
     padding: 100px;
@@ -105,6 +109,7 @@ p {
     height: 500px;
     width: 600px;
     margin-left: 25%;
+	display: block;
 }
 .text-box input[type=text], input[type=date] {
     border:0;
@@ -182,14 +187,14 @@ input[type=email]::placeholder, input[type=text]::placeholder {
 }
 .sec2 {
     padding: 30px;
-    min-height: 45vh;
+    height: 55vh;
     background: rgb(25,25,25);
 }
 .conteudo2 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 15vh;
 }
 .consul {
     height: 500px;
@@ -255,11 +260,33 @@ footer p{
 footer p:hover{
     color: rgb(182, 182, 182);
 }
-@media only screen and (max-width: 1300px) {
-    #menu{
+
+@media only screen and (max-width: 1300px){
+    h3 {
+		font-weight: 200;
+		margin-bottom: 10px;
+		color:white;
+		font: normal 40pt Arial;
+		text-transform: uppercase;
+		-webkit-text-stroke-width: 1 px;
+		-webkit-text-stroke-color: #000;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	p {
+		color: white;
+		position: relative;
+		font-size: 20px;
+		font-weight: 300;
+		margin-bottom: 20px;
+		letter-spacing: 0.5px;
+	}
+	#menu {
         height: 20vw;
     }
-    #menu ul{
+    #menu ul {
         background-color: black;
         display: block;
         text-align: center;
@@ -272,20 +299,95 @@ footer p:hover{
         right: 400px;
         visibility: hidden;
     }
-    #menu img{
+    #menu img {
         height: 15vw;
         width: 30vw;
         visibility: visible;
     }
-    .closebtn{
-        visibility:hidden;
+    .openmenu {
+        visibility: visible;
+        margin-left: 95px;
         font-size: 30px;
     }
-    #close:hover{
+    .openmenu:hover {
+        color: rgb(219, 104, 27);
+        transition: ease-in 0.3s;
+    }
+    #close {
+        visibility: visible;
+        font-size: 30px;
+    }
+	#sair {
+		visibility: visible;
+	}
+    #close:hover {
         color:cornflowerblue;
         transition: ease-in 0.3s;
     }
-    .btn_face, .btn_insta, .btn_link{
+    .text-box {
+        display: inline-block;
+        margin: -5% -53% ;
+    }
+    #text-box2 {
+        display: inline-block;
+        margin: -5% -50% ;
+    }
+    .text-box input[type=text], input[type=date] {
+        border:0;
+        background-color: rgba(0, 0, 0, 0);
+        display:flex;
+        margin: 40px auto;
+        font-size: 15pt;
+        text-align: left;
+        border-bottom: 5px solid royalblue;
+        outline: none;
+        color: rgb(255,255,255);
+        transition: 0.25s;
+    }
+    .text-box input[type=text]:focus, input[type=date]:focus {
+        border:0;
+        background-color: rgba(0, 0, 0, 0);
+        display:flex;
+        margin: 40px auto;
+        font-size: 15pt;
+        text-align: left;
+        border-bottom: 6px solid royalblue;
+        box-shadow: 0 0 10px 4px royalblue;
+        outline: none;
+        color: rgb(255,255,255);
+        transition: 0.25s;
+    }
+    input[type=email]::placeholder, input[type=text]::placeholder {
+        color: rgb(255,255,255);
+    }
+    .btn_enviar {
+        border:0;
+        background: none;
+        text-align: center;
+        padding: 12px;
+        outline: none;
+        font-size: 15pt;
+        color: white;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+    .btn_limpar {
+        border:0;
+        background: none;
+        margin-top: -6%;
+        text-align: center;
+        padding: 12px;
+        outline: none;
+        font-size: 15pt;
+        color: white;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+	.serv {
+		padding: 70px;
+		display: block;
+    }
+    .btn_face, .btn_insta, .btn_link {
         display: inline-block;
         width: 10vw;
         height: 10vw;
@@ -296,7 +398,7 @@ footer p:hover{
         text-align: center;
         color: #fefeff;
     }
-    .btn_face i, .btn_insta i, .btn_link i{
+    .btn_face i, .btn_insta i, .btn_link i {
         line-height: 4vw;
         font-size: 5vw;
         margin-top: 2.8vw;

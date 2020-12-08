@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -11,15 +11,16 @@
         <!--Menu-->
         <header id="menu">
             <a href="#parte1" id="pt1"><img src="logo2.png"alt=""></a>
-            <!--<span class="openmenu" onClick="abreMenu()">&#9776;</span> <!--responsivo-->
-            <ul>
-                <li><a href="#parte1" id="pt1">Serviços</a></li>
-                <li><a href="#parte2" id="pt2">Cadastro</a></li>
-                <li><a href="#parte3" id="pt3">Consulta</a></li>
-                <!--<li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li> <!--responsivo-->
+            <span class="openmenu" onClick="abreMenu()">&#9776;</span> <!--responsivo-->
+            <ul id="menu2">
+                <li><a href="#parte1" id="pt1">Cadastro</a></li>
+                <li><a href="#parte2" id="pt2">Consulta</a></li>
+                <li><a href="#parte3" id="pt3">Serviços</a></li>
                 <ul>
-                    <li><a href="index1.html">Sair</a>
+					<li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li>
+                    <li><a href="index1.html" id="sair">Sair</a>
                 </ul>
+                
             </ul>
         </header>
         <!--Cadastramento-->
@@ -30,12 +31,12 @@
             </div>
             <br>
             <div class="cadas">
-                <form class="text-box">
-                    <input type="text" placeholder="Nome" id="txtnome">
-                    <input type="text" placeholder="Senha">
-                    <input type="text" placeholder="RG">
-                    <input type="text" placeholder="Endereço">
-                    <input type="date">
+                <form method="POST" action="funcionario.php" class="text-box">
+                    <input type="text" placeholder="Nome" name="nm" id="txtnome">
+                    <input type="text" placeholder="Senha" name="senha">
+                    <input type="text" placeholder="RG" maxlength="11" name="rg">
+                    <input type="text" placeholder="Endereço" name="end">
+                    <input type="date" name="data">
                     <input type="submit" value="Cadastrar" class="btn_enviar">
                     <input type="reset" value="Limpar" class="btn_limpar" onClick="limpar()">
                 </form>
@@ -46,14 +47,15 @@
             <div class="conteudo2">
                 <h3>Consulta</h3>
                 <p>Para funcionários e clientes.</p>
+            </div>
                 <div class="consul">
-                    <form class="text-box">
-                        <input type="text" placeholder="RG OU CNPJ">
-                        <input type="button" value="Consultar" class="btn_enviar">
-                        <input type="button" value="Limpar" class="btn_limpar">
+                    <form method="POST" action="consultar.php" class="text-box" id="text-box2">
+                        <input type="text" name="dado" placeholder="RG OU E-MAIL">
+                        <input type="submit" value="Consultar" class="btn_enviar">
+                        <input type="reset" value="Limpar" class="btn_limpar">
                     </form>
                 </div>
-            </div>
+            
         </section>
 
         <section class="sec3" id="parte3">

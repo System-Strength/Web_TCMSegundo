@@ -573,7 +573,7 @@ footer p:hover{
     #menu{
         height: 20vw;
     }
-    #menu ul{
+    #menu ul {
         background-color: black;
         display: block;
         text-align: center;
@@ -586,7 +586,7 @@ footer p:hover{
         right: 400px;
         visibility: hidden;
     }
-    #menu img{
+    #menu img {
         height: 15vw;
         width: 30vw;
         visibility: visible;

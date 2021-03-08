@@ -1,16 +1,22 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
 
-body {
+*{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*
+::-webkit-scrollbar{
+    display: none;
+} */
+
+body {
     box-sizing: border-box;
     font-family: sans-serif;
-    min-height: 1000px;
+    min-height: 100%;
     background-color: black;
     margin-bottom: 25px;
-}
-html {
-    scroll-behavior: smooth;
 }
 #menu {
     position: fixed;
@@ -18,7 +24,7 @@ html {
     left:0;
     width: 100%;
     height: 8%;
-    background: black;
+    background: rgba(0, 0, 0, 0.568);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,11 +37,16 @@ html {
     background: rgb(0, 0, 0);
     border-bottom: 1px solid (0,0,0,.1);
 }
+#menu.sticky img {
+    height: 4.5vw;
+    width: 6.2vw;
+    padding: 5px 10px;
+}
 #menu img {
-    height: 6vw;
-    width: 15vw;
+    height: 5vw;
+    width: 7vw;
     transition: 0.6s;
-    margin-left: -38%;
+    margin-left: -10%;
 }
 #menu ul {
     position: relative;
@@ -46,7 +57,7 @@ html {
 #menu ul li {
     position: relative;
     list-style: none;
-    left: -14.5%;
+    left: -23%;
 }
 #menu ul li a {
     padding: 21px;
@@ -111,27 +122,31 @@ html {
 .texts {
     text-align: center;
     text-transform: uppercase;
-    width: 150vh;
+    width: 100%;
     height: 30vh;
-    margin-top: 20%;
-    margin-left: 9%;
+    margin-top: 25%;
     position: absolute;
-    display: block;
+    display: flex;
 }
 .texts p {
     z-index: 100;
     opacity: 0;
     position: absolute;
-    left: 35px;
-    display: flex;
-    font: bold 40pt Segoe UI;
+    margin: auto;
+    font: bold 30pt Segoe UI;
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000;
     text-transform: uppercase;
     text-justify: distribute;
-    transition: ease-out 2s;
+    transition: ease-out 0.4s;
 }
+
+#analise-banner,
+#mobile_banner{
+    left: 0%;
+}
+
 .texts p.first {
     opacity: 1;
 }
@@ -252,12 +267,26 @@ p {
     grid-gap: 30px;
     max-width: 100%;
 }
-.emp1 img, .emp2 img {
+.emp1 img {
     margin-top: -5%;
     width: 45%;
     height: 48%; 
     margin-left: 28%;
+    margin-bottom: 5%;
 }
+
+.emp2 img{
+    margin-top: -5%;
+    width: 30%;
+    height: 30%; 
+    margin-left: 35%;
+    margin-bottom: 10%;
+}
+
+.emp3 img{
+    margin-top: -5%;
+}
+
 .emp4 img, .emp5 img, .emp6 img {
     margin-top: 0%;
     width: 45%;
@@ -273,43 +302,6 @@ p {
     transition: 1.2s;
     transform: scale(1.1);
     cursor: pointer;
-}
-.sec_pro {
-    background: rgb(35, 35, 35);
-    padding: 100px;
-    min-height: 50vh;
-    display: flex;
-    color: white;
-}
-#parte8 {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 30px;
-    max-width: 100%;
-}
-.c {
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-}
-.imgsis {
-    width: 65%; 
-    height: 58vh;
-}
-.imgdes {
-    width: 35%; 
-    height: 50vh; 
-    margin: -5% 12%;
-}
-.imgdes2 {
-    width: 48%; 
-    height: 54vh; 
-    margin-top: -2%;
-}
-.imgana {
-    width: 48%; 
-    height: 58vh;
 }
 .c2 {
     text-align: right;
@@ -568,7 +560,6 @@ footer p:hover{
     }
 }
 
-
 @media only screen and (max-width: 1300px){
     #menu{
         height: 20vw;
@@ -607,7 +598,6 @@ footer p:hover{
         margin-top: 20%;
         margin-left: 16%;
         position: absolute;
-        display: block;
     }
     .texts p {
         z-index: 100;

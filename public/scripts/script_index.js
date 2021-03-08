@@ -1,5 +1,5 @@
 //Slideshow com texto e imagem
-let time = 8000,
+let time = 5000,
     currentImageWeb = 0,
     currentTextWeb = 0,
     text = document.querySelectorAll(".texts p"),
@@ -61,8 +61,8 @@ function abreMenu()
 function limpar() {
     document.getElementById("txtnome").focus();
 }
-var pt1 = window.document.getElementById('pt1')
-pt1.addEventListener('click', parte1)
+var logo = window.document.getElementById('logo')
+logo.addEventListener('click', parte1)
 
 var pt2 = window.document.getElementById('pt2')
 pt2.addEventListener('click', parte2)

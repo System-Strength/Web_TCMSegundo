@@ -2,41 +2,40 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="sortcut icon" href="icons8.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <link rel="sortcut icon" href="./images/S_no_bg.png" type="image/x-icon">
         <title>System Strength</title>
         <link rel="stylesheet" href="./styles/style_index.css">
     </head>
     <body>
         <!--Menu-->
         <header id="menu">
-            <a href="#parte1" id="pt1"><img src="logo2.png"alt=""></a>
+            <a href="#parte1" id="logo"><img src="./images/S_no_bg.png"alt=""></a>
             <span class="openmenu" onClick="abreMenu()">&#9776;</span>
             <ul id="menu2">
                 <li><a href="#parte2" id="pt2">Empresa</a></li>
                 <li><a href="#parte3" id="pt3">Serviços</a></li>
-                <li><a href="#parte8" id="pt4">Portifólio</a></li>
+                <li><a href="./campeonato/index.html" id="pt4">Portifólio</a></li>
                 <li><a href="#parte5" id="pt5">Sustentabilidade</a></li>
                 <li><a href="#parte6" id="pt6">Localização</a></li>
                 <li><a href="#parte7" id="pt7">Suporte</a></li>
-                <li><a href="login.html" id="pt8">Login</a></li>
                 <li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li>
             </ul>
         </header>
         <!--Slideshow-->
         <section class="banner" id="parte1">
             <div class="sliders">
-                <img class="selected" src="ana.jpg" style="width: 100%; height: 100vh">
-                <img src="asp.png" style="width: 100%; height: 100vh">
-                <img src="ios.jpg" style="width: 100%; height: 100vh">
-                <img src="web.jpg" style="width: 100%; height: 100vh">
-                <img src="redes.jpg" style="width: 100%; height: 100vh">
-                <img src="banco.jpg" style="width: 100%; height: 100vh">
+                <img class="selected" src="./images/analise_main.jpg" style="width: 100%; height: 100vh">
+                <img src="./images/asp.png" style="width: 100%; height: 100vh">
+                <img src="./images/ios.jpg" style="width: 100%; height: 100vh">
+                <img src="./images/web.jpg" style="width: 100%; height: 100vh">
+                <img src="./images/redes_main.gif" style="width: 100%; height: 100vh">
+                <img src="./images/server.gif" style="width: 100%; height: 100vh">
             </div>
             <div class="texts">
-                <p class="first">FAÇA ANÁLISE DO SEU PROJETO CONOSCO, TENHO CERTEZA QUE NÃO IRÁ SE ARREPENDER!</p>
+                <p id="analise-banner" class="first">FAÇA ANÁLISE DO SEU PROJETO CONOSCO, TENHO CERTEZA QUE NÃO IRÁ SE ARREPENDER!</p>
                 <p>Venha fazer o sistema da sua empresa aqui na System Strength com diversas funcionalidades de sua preferência.</p>
-                <p>Venha desenvolver seu próprio aplicativo com diversas funcionalidades e banco de dados integrado.</p>
+                <p id="mobile_banner" >Venha desenvolver seu próprio aplicativo com diversas funcionalidades e banco de dados integrado.</p>
                 <p>Podemos fazer o seu próprio site ou de sua empresa com um design e funcionalidades bem elaboradas com suas próprias ideias e opiniões.</p>
                 <p>Montamos uma rede com base na planta de sua empresa para melhorar a conexão e toda a empresa ter acesso a internet.</p>
                 <p>Trabalhamos com banco de dados do seu site e de seu sistema com suas próprias regras de negócio e totalmente personalizado.</p>
@@ -75,7 +74,7 @@
         <section class="sec_serv" id="parte3">
             <div class="box">
                 <div class="icon1">
-                    <img src="serv-1.png" alt="">
+                    <img src="./images/codeblock_serv1.png" alt="">
                 </div>
                 <div class="serv1">
                     <h2>DESENVOLVIMENTO DE SISTEMAS</h2>
@@ -83,7 +82,7 @@
             </div>
             <div class="box">
                 <div class="icon2">
-                    <img src="serv-2.png" alt="">
+                    <img src="./images/design_serv2.png" alt="">
                 </div>
                 <div class="serv2">
                     <h2>DESIGN</h2>
@@ -91,33 +90,10 @@
             </div>
             <div class="box">
                 <div class="icon3">
-                    <img src="serv-3.png" alt="">
+                    <img src="./images/analysis_serv3.png" alt="">
                 </div>
                 <div class="serv3">
                     <h2>ANÁLISE DE SISTEMAS</h2>
-                </div>
-            </div>
-        </section>
-        <!--Produtos-->
-        <section class="sec_pro" id="parte8">
-            <div>  
-                <div class="c">
-                    <h3>Sistema C#</h3>
-                    <p>Venha fazer o sistema da sua empresa aqui na System Strength com diversas funcionalidades de sua preferência.</p>
-                    <img src="c.png" class="imgsis">
-                </div>
-                <br><br><hr><br>
-                <h3>Design</h3>
-                <p>Design cria cultura. Cultura molda valores. Valores determinam o futuro.</p>
-                <div class="c2">
-                    <img src="ep2.png" class="imgdes">
-                    <img src="cracha_palace.png" class="imgdes2">
-                </div>
-                <br><br><hr><br>
-                <div class="c">
-                    <h3>Análise</h3>
-                    <p>Faça análise do seu projeto conosco, tenho certeza que não irá se arrepender!</p>
-                    <img src="analisesite.png" class="imgana">
                 </div>
             </div>
         </section>
@@ -125,29 +101,29 @@
         <section class="sec_emp" id="parte4">
             <div class="box1">
                 <div class="emp1">
-                    <img src="ep1.png" alt="" >
+                    <img src="./images/logo_samsung.png" alt="" >
                 </div>
                 <div class="emp2">
-                    <img src="ep2.png" alt="">
+                    <img src="./images/logo_microsoft.png" alt="">
                 </div>
                 <div class="emp3">
-                    <img src="ep3.png" alt="" width="20%" height="10%" style="margin-left: 40%; margin-top:-2%;">
+                    <img src="./images/logo_apple.png" alt="" width="20%" height="10%" style="margin-left: 40%; margin-top:-2%;">
                 </div>
             </div>  
             <div class="box2">
                 <div class="box">
                     <div class="emp4">
-                        <img src="ep4.png" alt="">
+                        <img src="./images/logo_espn.png" alt="">
                     </div>
                 </div>
                 <div class="box">
                     <div class="emp5">
-                        <img src="ep5.png" alt="">
+                        <img src="./images/logo_amazon.png" alt="">
                     </div>
                 </div>
                 <div class="box">
                     <div class="emp6">
-                        <img src="ep6.png" alt="">
+                        <img src="./images/logo_ea.png" alt="">
                     </div>
                 </div>
             </div>
@@ -219,7 +195,7 @@
                     </div>
                 </br>
             <h3 class="faq">FALE CONOSCO</h3>
-            <form method="post" action="cliente.php" name="form" class="form_cont" onclick="Validação()">
+            <form method="post" action="./php/cliente.php" name="form" class="form_cont" onclick="Validação()">
                 <div class="login-box">
                     <div class="text-box">
                         <input type="text" placeholder="Nome*" maxlength="50" id="txtnome" name="nome">
@@ -239,6 +215,15 @@
             <a href="http://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="btn_link"><i class="fa fa-linkedin-square"></i></a>
             <p>&copy; SystemStrength</p>
         </footer>
-        <script src="script_index.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.2.10/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.2.10/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+        <script src="./scripts/script_index.js"></script>
     </body>
 </html>
